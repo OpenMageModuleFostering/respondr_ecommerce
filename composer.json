@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Respondr_Ecommerce",
+    "type": "magento-module",
+    "license": "GPL-v3",
+    "homepage": "",
+    "description": "Advanced ecommerce marketing automation for Magento retailers.",
+    "authors": [
+    {
+        "name": "Leroy Ware",
+        "email": "leroy@respondr.io"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
