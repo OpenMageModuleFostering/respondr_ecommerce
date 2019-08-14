@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
 <package>
     <name>Respondr_Ecommerce</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="@license http://www.gnu.org/licenses/gpl-3.0.html">GPL v3</license>
     <channel>community</channel>
     <extends/>
     <summary>Advanced ecommerce marketing automation for Magento retailers.</summary>
     <description>Increase your online revenue with automated email, mobile, and social messaging driven by your web analytics. Respondr makes it easy to re-engage your customers and bring them back to your store. Creating and managing abandoned cart, product recommendation, and cross-sell email marketing has never been easier. You can also send coupons and promotions via SMS/MMS, Facebook and more!</description>
-    <notes>This extension is based on Adrian Speyer's magento extension for Piwik, which can be found at http://www.magentocommerce.com/magento-connect/piwik-ecommerce.html.</notes>
-    <authors><author><name>Leroy Ware</name><user>leroyjware</user><email>leroy@respondr.io</email></author></authors>
-    <date>2014-04-29</date>
-    <time>21:56:46</time>
-    <contents><target name="magecommunity"><dir name="app"><dir name="code"><dir name="community"><dir name="RespondrMage"><dir name="RespondrAnalytics"><dir name="Block"><file name="Respondr.php" hash=""/></dir><dir name="Helper"><file name="Data.php" hash=""/></dir><dir name="Model"><file name="Observer.php" hash=""/></dir><dir name="controllers"><file name="IndexController.php" hash=""/></dir><dir name="etc"><file name="adminhtml.xml" hash=""/><file name="config.xml" hash=""/><file name="system.xml" hash=""/></dir></dir></dir></dir></dir></dir></target><target name="magedesign"><dir name="app"><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="respondranalytics.xml" hash=""/></dir><dir name="template"><dir name="respondranalytics"><file name="respondr.phtml" hash=""/></dir></dir></dir></dir></dir></dir></dir></target><target name="magelocal"><dir name="app"><dir name="etc"><dir name="modules"><file name="RespondrMage_RespondrAnalytics.xml" hash=""/></dir></dir></dir></target><target name="magelocale"><dir name="app"><dir name="locale"><dir name="de_DE"><file name="RespondrMage_RespondrAnalytics.csv" hash=""/></dir><dir name="en_US"><file name="RespondrMage_RespondrAnalytics.csv" hash=""/></dir></dir></dir></target></contents>
+    <notes>- Minor bug fix to get ecommerce orders tracking correctly.&#xD;
+- Added support for syncing optin status with Respondr.</notes>
+    <authors><author><name>Leroy Ware</name><user>LeroyWare</user><email>leroy@respondr.io</email></author><author><name>Adrian Speyer</name><user>AdrianSpeyer</user><email>adriansprojects@gmail.com</email></author></authors>
+    <date>2014-07-03</date>
+    <time>11:16:28</time>
+    <contents><target name="magecommunity"><dir name="RespondrMage"><dir name="RespondrAnalytics"><dir name="Block"><file name="Respondr.php" hash="b95e0d1e80918a3f5c5cd3f957e79ba0"/></dir><dir name="Helper"><file name="Data.php" hash="be7c1f8d2fcdc4d3e7c1eb9612f9d6f8"/></dir><dir name="Model"><file name="Observer.php" hash="7301ca92b1762223cf8228439fa8468e"/></dir><dir name="controllers"><file name="IndexController.php" hash="c88824e1da8c803bb91d96505e99ce5b"/></dir><dir name="etc"><file name="adminhtml.xml" hash="b28f4ddc5e0851cff79bdc1624e1192c"/><file name="config.xml" hash="ba0e13559f0515126ea5b169e6fa6ab2"/><file name="system.xml" hash="85e4eca7a0d8a78660c9f4222ca25633"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="respondranalytics.xml" hash="27dc170600cb1d71cdcb7bacb6455230"/></dir><dir name="template"><dir name="respondranalytics"><file name="respondr.phtml" hash="ed8662e33db2d7c4c5a9adae72a6b994"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="RespondrMage_RespondrAnalytics.xml" hash="9dd32f4b236640c74d1f08f5cb8e344d"/></dir></target><target name="magelocale"><dir name="de_DE"><file name="RespondrMage_RespondrAnalytics.csv" hash="788bc282a1e82ff83d93a70297435376"/></dir><dir name="en_US"><file name="RespondrMage_RespondrAnalytics.csv" hash="464c1c6e0ad748dadc01bf0a1e336287"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
