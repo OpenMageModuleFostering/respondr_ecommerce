@@ -144,10 +144,11 @@ class RespondrMage_RespondrAnalytics_Block_Respondr extends Mage_Core_Block_Temp
         $category = Mage::getModel('catalog/category')->load($category_id);
         $category_name = $category->getName();
         $product = $currentproduct->getName();
-        $product = str_replace('"', "", $product);
-        $description = str_replace('"', "", $_product->getDescription());
+        //$product = str_replace('"', "", $product);
+        //$description = str_replace('"', "", $_product->getDescription());
+        $description = "";
 
-        echo 'respondrTracker.setEcommerceView("' . $currentproduct->getSku() . '", "' . $product . '","' . $category_name . '",' . $currentproduct->getPrice() . ',"'. $_product->getImageUrl() . '","'. $description .'");';
+        echo 'respondrTracker.setEcommerceView("' . $this->jsQuoteEscape($currentproduct->getSku()) . '", "' . $this->jsQuoteEscape($product) . '","' . $this->jsQuoteEscape($category_name) . '",' . $currentproduct->getPrice() . ',"'. $_product->getImageUrl() . '","'. $this->jsQuoteEscape($description) .'");';
         Mage::unregister('current_category');
     }
 
