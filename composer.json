@@ -1,13 +1,13 @@
 {
     "name": "OpenMageModuleFostering/Respondr_Ecommerce",
     "type": "magento-module",
-    "license": "GPL-v3",
+    "license": "GPL",
     "homepage": "",
-    "description": "Advanced ecommerce marketing automation for Magento retailers.",
+    "description": "CRM and marketing automation for e-commerce. Send personalized messages to your users based on their actions.",
     "authors": [
     {
-        "name": "Leroy Ware",
-        "email": "leroy@respondr.io"
+        "name": "Respondr Inc",
+        "email": "admin@respondr.io"
     }
 ],
     "suggest": {

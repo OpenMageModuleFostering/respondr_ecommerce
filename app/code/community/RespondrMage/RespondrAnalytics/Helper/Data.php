@@ -15,35 +15,5 @@ class RespondrMage_RespondrAnalytics_Helper_Data extends Mage_Core_Helper_Abstra
     /**
      * Config paths for using throughout the code
      */
-    const XML_PATH_ACTIVE  = 'respondr/analytics/active';
     const XML_PATH_SITE =    'respondr/analytics/site';
-	const XML_PATH_PWTOKEN = 'respondr/analytics/pwtoken';
-
-    // hard-code Respondr URL
-    const SERVER_URL = 'http://analytics.respondr.io';
-	
-	
-    /**
-     *
-     * @param mixed $store
-     * @return bool
-     */
-    public function isRespondrAnalyticsAvailable($store = null)
-    {
-        $siteId = Mage::getStoreConfig(self::XML_PATH_SITE, $store);
-		return $siteId && Mage::getStoreConfigFlag(self::XML_PATH_ACTIVE, $store);
-	}
-
-    /**
-     * Check the customer's newsletter optin status
-     * @return string
-     */
-    public function isCustomerSubscribed($email) {
-        $subscriber = Mage::getModel('newsletter/subscriber')->loadByEmail($email);
-        if($subscriber->getId()) {
-            return $subscriber->getData('subscriber_status') == Mage_Newsletter_Model_Subscriber::STATUS_SUBSCRIBED;
-        } else {
-            return 0;
-        }
-    }
 }
