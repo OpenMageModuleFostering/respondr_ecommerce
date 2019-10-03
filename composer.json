@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Respondr_Ecommerce",
+    "name": "OpenMageModuleFostering\/Respondr_Ecommerce",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "CRM and marketing automation for e-commerce. Send personalized messages to your users based on their actions.",
     "authors": [
-    {
-        "name": "Respondr Inc.",
-        "email": "admin@respondr.io"
-    }
-],
+        {
+            "name": "Respondr Inc.",
+            "email": "admin@respondr.io"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
